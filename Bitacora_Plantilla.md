@@ -1,12 +1,12 @@
-# **`Bitácora de (Nombre del Proyecto)`**
+# **`Bitácora de (gimball-acceso)`**
 
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
 
 ## **`Integrante/s`**
 
-- `Nombre 1`  
-- `Nombre 2`
+- `Jose Barcelo 3A`  
+- `Agustin Samuwl Itkin 3B`
 
 
 ---
