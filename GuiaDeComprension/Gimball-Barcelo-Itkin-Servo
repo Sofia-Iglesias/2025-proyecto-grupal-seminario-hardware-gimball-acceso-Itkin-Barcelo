@@ -1,0 +1,29 @@
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+es un actuador funciona mediante un motor que mueve ejes para que una pata se mueva en un rango de 180 grados dependiendo el modelo ademas tiene una especie de potenciometro que funciona como resistor para medir la posicion actual
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+analogica
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+el maximo de valores que puede entregar es 180
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+positivo, negativo y señal usa señal ya que no es como un motor que simplemente gira cuando se le aplica voltaje este necesita una señal con indicaciones de a donde moverse ya que lleva cierto registro
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+2 y 3 los elegimos porque estaban mas cerca de la protoboard
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+¿Cuál es el principio de funcionamiento del componente?
+Un controlador compara la posición de referencia deseada con la posición actual del motor (obtenida de un sensor como un codificador). Si hay una diferencia (error), el controlador ajusta el motor para corregir ese error y que el eje alcance la posición especificada. 
+¿Utiliza alguna librería particular para programarlo?
+si, Servo
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+Se interpreta el error entre las posiciones de la entrada y la salida y ajusta la salida apropiadamente
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+hay que tener cuidado con la cantidad de servos conectados ya qeu los servos consumen bastante energia 
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+verificaria cuanto consume
+Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/aUAN5MYFG8g/editel?returnTo=%2Fdashboard 
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+La lectura del potenciometro
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+ podriamos detectar una falla si algun pin se rompe o si no interpreta correctamente los comandos del potenciometro o si gira de maneras extrañas
+
