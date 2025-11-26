@@ -1,0 +1,36 @@
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Es un sensor el cual dependiendo de como lo mueva el usuario va a transferir ese movimiento a una señal analogica que puede ser interpretada por el Arduino y usarse con una salida.
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Analogica
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+0 a 1023 ese es el ADC
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+
+Terminal 1: Negativo
+Terminal 2: Positivo
+Wiper: Señal
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Negativo: negativo de la proto
+Positivo: positivo de la proto
+Wiper: Pin 3
+
+Los elegi para usar menos cable y el 3 porque esta cerca de la proto
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+https://imgur.com/a/EDW0Ijz
+¿Cuál es el principio de funcionamiento del componente?
+El principio de funcionamiento del potenciómetro en Arduino es actuar como un divisor de voltaje variable. Al girar su perilla, se modifica la resistencia entre sus terminales, lo que a su vez cambia el voltaje de salida en su pin central.
+¿Utiliza alguna librería particular para programarlo?
+No
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+El input que da el usuario lo convierte en una señal analogica que el arduino puede interpretar  como 0 a 5v
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Tener cuidado de que el arduino no devuelva la carga
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Me fijaria que todas las perillas anden bien y los pines esten en buen estado
+Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/1omrhXlfXnt/editel?returnTo=%2Fdashboard  
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Espero tener una lectura analogica que luego convertiria en grados para usar en mi salida
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Si la lectura que me devuelve es mucho mas grande de lo que movi el potenciometro automáticamente podria darme cuenta de que hay algo mal en el componente
+
