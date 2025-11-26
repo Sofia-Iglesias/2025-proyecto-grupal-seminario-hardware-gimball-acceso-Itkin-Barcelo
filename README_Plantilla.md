@@ -10,27 +10,24 @@
 
 ## **`Objetivo`**
 
-`Breve descripción del propósito del proyecto. Completar una vez definido el proyecto.`
+`la idea de este proyecto es una camara que se mueva segun se mueve el joystick tambien queremos un boton para volver a la posicion original osea 0,0`
 
 ## **`Descripción del Proyecto`**
 
-`Explicar en qué consiste y qué se busca lograr. Completar una vez definido el proyecto.`
+`este proyecto busca mover una camara con 2 servos con un joystick en x e y tambien habria un pulsador con la posicion precargada 0,0 `
 
 ## **`Componentes`**
 
-- `Componente 1`  
-- `Componente 2`  
-- `Componente 3`
+- ` 2x Servo motor`  
+- `1x joystick`  
+- `1x boton`
 
-`Completar una vez definido el proyecto.`
 
 ## **`Requisitos`**
 
-- `Software necesario`  
-- `Librerías`  
-- `Hardware adicional`
+- `ide de arduino`  
+- `aveces se necesitan las librerias de servo y joystick  veces no`  
 
-`Completar una vez definido el proyecto.`
 
 ## **`Etapas del proyecto`**
 ### Etapa 1:
