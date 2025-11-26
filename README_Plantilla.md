@@ -10,7 +10,7 @@
 
 ## **`Objetivo`**
 
-`Breve descripción del propósito del proyecto. Completar una vez definido el proyecto.`
+`la idea de este proyecto es una camara que se mueva segun se mueve el joystick tambien queremos un boton para volver a la posicion original osea 0,0`
 
 ## **`Descripción del Proyecto`**
 
