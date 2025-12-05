@@ -1,9 +1,64 @@
-Bitácora del proyecto
+Bitácora de Control de Servomotor con Potenciómetro
+Tecnología de los Sistemas de Información - Seminario Avanzado
+Ciclo Lectivo 2025
+
 Mi proyecto consiste en controlar el movimiento de un servomotor usando un potenciómetro. A medida que giro el potenciómetro, el servo se mueve según la posición que tenga.
-Al principio del proyecto tuve que investigar para qué servía cada componente y cómo funcionaban. Aprendí que el potenciómetro entrega una señal variable y que el servomotor se mueve según la señal que reciba desde la placa. Al comienzo me costó entender cómo relacionar esos dos valores, pero con ejemplos y pruebas lo fui entendiendo mejor.
-Después armé el circuito. Conecté el potenciómetro a una entrada analógica y el servo a otro pin , además de la alimentación y la tierra. En los primeros intentos el servomotor no se movía y el problema era que había hecho mal algunas conexiones. Revisando todo con más atención pude corregirlo.
-Luego pasé a la parte de programación. Cargué una libreria (servo) que lee el valor del potenciómetro y lo transforma en un ángulo para mover el servomotor. Al principio no entendia como se pasaba el valor analogico a grados por lo cual el potenciometro no se movia, pero pude resolverlo viendo un tutorial sobre la libreria.
-Cuando terminé el armado y la programación, hice varias pruebas girando el potenciómetro de a poco. Finalmente logré que el servomotor se mueva de manera proporcional al movimiento del potenciómetro, cumpliendo con el objetivo del proyecto.
+Integrante/s
+José Barcelo
+
+
+Agustín Samuel Itkin
+
+
+
+Semanas 1-2
+Actividades Realizadas:
+Investigación sobre el funcionamiento del potenciómetro y el servomotor.
+
+
+Análisis de cómo se relaciona la señal del potenciómetro con el movimiento del servo.
+
+
+Dificultades:
+Dificultad para entender cómo convertir el valor analógico del potenciómetro en un movimiento concreto del servomotor.
+
+
+Falta de experiencia inicial con este tipo de componentes.
+
+
+Próximos Pasos:
+Armar el circuito completo.
+
+
+Conectar correctamente el potenciómetro y el servomotor a la placa.
+
+
+Semana 3-4
+Actividades Realizadas:
+Armado del circuito conectando el potenciómetro a una entrada analógica y el servomotor a un pin correspondiente, junto con alimentación y tierra.
+
+
+Corrección de errores en las conexiones que impedían el movimiento del servomotor.
+
+
+Carga de la librería Servo y programación para leer el valor del potenciómetro.
+
+
+Conversión del valor analógico a grados para mover el servomotor.
+
+
+Pruebas finales girando el potenciómetro y verificando el movimiento proporcional del servo.
+
+
+Dificultades:
+El servomotor no se movía en los primeros intentos por conexiones incorrectas.
+
+
+No se entendía al principio cómo transformar el valor del potenciómetro en un ángulo.
+
+
+
+
 Como reflexión final, este proyecto me ayudó a entender mejor cómo se relacionan los sensores con los actuadores, y cómo la programación permite controlar componentes electrónicos. También aprendí que es muy importante revisar bien las conexiones y tener paciencia para detectar errores.
 Como posibles mejoras, se podría agregar una pantalla para mostrar el ángulo del servo, hacer que el movimiento sea más suave o usar este sistema para controlar algún mecanismo más complejo, como un brazo robótico.
 
