@@ -1,1 +1,47 @@
+#include <Servo.h>
 
+#define pot1 A0
+#define pot2 A1
+#define BTN 7
+
+Servo Servo1;
+Servo Servo2;
+
+bool resetFlag = false;    
+bool botonPrevio = false;  
+
+void setup() {
+  Servo1.attach(2);
+  Servo2.attach(3);
+  pinMode(BTN, INPUT);
+}
+
+void loop() {
+  int botonActual = digitalRead(BTN);
+  if (botonActual == HIGH && botonPrevio == false) {
+  
+    resetFlag = !resetFlag;
+
+    if (resetFlag) {
+      
+      Servo1.write(0);
+      Servo2.write(0);
+    }
+  
+    delay(80);
+  }
+  botonPrevio = botonActual;
+
+ 
+  if (resetFlag) {
+    return; 
+  }
+
+  int lectura1 = analogRead(pot1);
+  int grados1 = map(lectura1, 0, 1023, 0, 180);
+  Servo1.write(grados1);
+
+  int lectura2 = analogRead(pot2);
+  int grados2 = map(lectura2, 0, 1023, 0, 180);
+  Servo2.write(grados2);
+}
